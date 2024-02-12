@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import NavBarTop from './components/navbar/navbar.tsx';
 import { Heading } from './components/heading/heading.tsx';
 import { Overview } from './components/overview/overview.tsx';
+import { About } from './components/about/about.tsx';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -20,6 +21,9 @@ function App() {
         <div className='hauptInfo'>
           <Heading />
           <Overview />
+        </div>
+        <div className='infoContainer'>
+          <About />
         </div>
       </div>
     </div>

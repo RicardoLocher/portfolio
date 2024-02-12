@@ -94,3 +94,13 @@ button:focus-visible {
   border: 1px solid red;
 }
 
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: first baseline;
+  width: 50vw;
+  color: #fff;
+  font-family: monospace;
+  border: 1px solid red;
+}
