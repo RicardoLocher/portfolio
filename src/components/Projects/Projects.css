@@ -1,0 +1,42 @@
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 25px;
+    margin: 10%;
+    font-family: monospace;
+    border: 1px solid #fff;
+}
+
+.projectsHeading {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 25px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 25px;
+    padding: 25px;
+    font-family: monospace;
+    font-size: 1.1em;
+    border: 1px solid #fff;
+}
+
+.projectTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.githubLogo {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}

@@ -6,6 +6,7 @@ import { Overview } from './components/overview/overview.tsx';
 import { About } from './components/about/about.tsx';
 import { Certificates } from './components/certificates/Certificates.tsx';
 import { TechStack } from './components/Tech Stack/TechStack.tsx';
+import { Projects } from './components/Projects/Projects.tsx';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -31,6 +32,7 @@ function App() {
           <About />
           <Certificates />
           <TechStack />
+          <Projects />
         </div>
       </div>
     </div>
