@@ -1,0 +1,9 @@
+.overview {
+    align-self: center;
+}
+
+.OverviewList {
+    list-style-type: square;
+    text-align: left;
+    font-family: monospace;
+}
