@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBarTop(): JSX.Element{
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
+    <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark" sticky='top'>
       <Container>
         <Navbar.Brand>Ricardo Locher</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

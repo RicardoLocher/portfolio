@@ -19,10 +19,14 @@ function App() {
       <NavBarTop /> 
       <div className='customRow'>
         <div className='hauptInfo'>
-          <Heading />
-          <Overview />
+          <div className='stickyDiv'>
+            <Heading />
+            <Overview />
+          </div>
         </div>
+        
         <div className='infoContainer'>
+          <About />
           <About />
         </div>
       </div>
