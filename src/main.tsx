@@ -4,6 +4,7 @@ import NavBarTop from './components/navbar/navbar.tsx';
 import { Heading } from './components/heading/heading.tsx';
 import { Overview } from './components/overview/overview.tsx';
 import { About } from './components/about/about.tsx';
+import { Certificates } from './components/certificates/Certificates.tsx';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -27,7 +28,7 @@ function App() {
         
         <div className='infoContainer'>
           <About />
-          <About />
+          <Certificates />
         </div>
       </div>
     </div>

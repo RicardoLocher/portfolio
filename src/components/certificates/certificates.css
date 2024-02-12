@@ -1,0 +1,33 @@
+.certContainer{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 25px;
+    margin: 10%;
+    font-family: monospace;
+    border: 1px solid #fff;
+}
+
+.certHeading{
+    font-size: 2em;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.certLink{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.certPic{
+    display: inline-block;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    align-self: center;
+}
