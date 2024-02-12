@@ -1,0 +1,38 @@
+.techStackContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 25px;
+    margin: 10%;
+    font-family: monospace;
+    border: 1px solid #fff;
+}
+
+.techStackHeading{
+    font-size: 2em;
+    margin-bottom: 1rem;
+    margin-top: 2em;
+}
+
+.techStackHeading1{
+    font-size: 1.7em;
+    margin-bottom: 1rem;
+    margin-top: 2em;
+}
+
+.techStackItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.5em;
+    width: 70%;
+    height: 200px;
+    margin: 25px;
+    padding: 5px;
+    border: 1px solid #fff;
+    text-align: center;
+}

@@ -5,6 +5,7 @@ import { Heading } from './components/heading/heading.tsx';
 import { Overview } from './components/overview/overview.tsx';
 import { About } from './components/about/about.tsx';
 import { Certificates } from './components/certificates/Certificates.tsx';
+import { TechStack } from './components/Tech Stack/TechStack.tsx';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -29,6 +30,7 @@ function App() {
         <div className='infoContainer'>
           <About />
           <Certificates />
+          <TechStack />
         </div>
       </div>
     </div>
