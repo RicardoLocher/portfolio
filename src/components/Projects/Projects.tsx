@@ -11,11 +11,23 @@ export function Projects() {
             <Project title='Network - Web50'
                      description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt cumque ab dolorem et adipisci nobis deleniti vero blanditiis. A, ducimus magnam amet fugit illo fuga porro quas. Suscipit, ut?'
                      link='https://github.com/RicardoLocher/network-web50' />
+            <span className='projectsHeading'>Side Projects</span>
+            <Project title="Discord Meme Bot"
+                    description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt cumque ab dolorem et adipisci nobis deleniti vero blanditiis. A, ducimus magnam amet fugit illo fuga porro quas. Suscipit, ut?'
+                    link='https://github.com/RicardoLocher/Discord-Meme-Bot' />
+            <Project title="Discord AI Bot"
+                    description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt cumque ab dolorem et adipisci nobis deleniti vero blanditiis. A, ducimus magnam amet fugit illo fuga porro quas. Suscipit, ut?'
+                    link='#' />
+            <Project title="Neofetch for Windows"
+                    description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt cumque ab dolorem et adipisci nobis deleniti vero blanditiis. A, ducimus magnam amet fugit illo fuga porro quas. Suscipit, ut?'
+                    link='https://github.com/RicardoLocher/neofetch-for-windows' />
+            
         </div>
     )
 }
 
 function Project(props: {title: string, description: string, link: string}) {
+
     return (
         <div className='project'>
             <span className='projectTitle'>{props.title}</span>

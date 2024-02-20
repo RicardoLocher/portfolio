@@ -1,4 +1,5 @@
 import './TechStack.css'
+import './animations.css'
 
 export function TechStack() {
     return (
@@ -28,9 +29,16 @@ export function TechStack() {
 
 function TechStackItem(props: {icon: string, text: string}) {
     return (
-        <div className='techStackItem'>
-            <img src={props.icon} alt='icon' />
-            <p>{props.text}</p>
+        <div className='myCard'>
+            <div className='innerCard'>
+                <div className='frontSide'>
+                    <img src={props.icon} alt='icon' />
+                    <p className='title'>{props.text}</p>
+                </div>
+                <div className='backSide'>
+                    <p className='title'>To Do</p>
+                </div>
+            </div>
         </div>
     )
 }
