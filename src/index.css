@@ -80,12 +80,10 @@ button:focus-visible {
   display: flex;
   flex-direction: row;
   width: 100%;
-  border: 1px solid #fff;
 }
 
 .stickyDiv{
   position: fixed;
-  border: 1px solid red;
   width: 50vw;
   align-items: center;
 }
@@ -108,5 +106,4 @@ button:focus-visible {
   height: fit-content;
   color: #fff;
   font-family: monospace;
-  border: 1px solid red;
 }
