@@ -1,7 +1,7 @@
 .certContainer{
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 80%;
     margin: 25px;
     margin: 10%;
     font-family: monospace;
@@ -30,4 +30,8 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     align-self: center;
+}
+
+.accItem{
+    background-color: transparent;
 }
