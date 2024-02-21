@@ -12,6 +12,13 @@
     text-align: center;
     margin: 0;
   }
+
+  .text {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
   
   .innerCard {
     position: relative;
@@ -43,6 +50,7 @@
     color: white;
     box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
     font-weight: 700;
+    padding: 10%;
   }
   
   .frontSide,
@@ -71,7 +79,7 @@
     z-index: -1;
     border-radius: 1em;
     filter: blur(20px);
-    animation: animate 5s linear infinite;
+    animation: animate 8s linear infinite;
   }
   
   @keyframes animate {
@@ -80,7 +88,7 @@
     }
   
     80% {
-      opacity: 1;
+      opacity: 0.5;
     }
   
     100% {
