@@ -8,3 +8,14 @@
     text-align: left;
     font-family: monospace;
 }
+
+.normal {
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.highlighted {
+    font-size: 1.5em;
+    color: red;
+}

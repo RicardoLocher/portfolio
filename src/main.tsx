@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import NavBarTop from './components/navbar/navbar.tsx';
 import { Heading } from './components/heading/heading.tsx';
@@ -17,6 +17,52 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 
 function App() {
+  
+  useEffect(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        switch (entry.target.id) {
+            case 'about':
+              document.getElementById('aboutOverview')?.classList.add('highlighted');
+              break;
+            case 'certificates':
+              document.getElementById('certificatesOverview')?.classList.add('highlighted');
+              break;
+            case 'techStack':
+              document.getElementById('techStackOverview')?.classList.add('highlighted');
+              break;
+            case 'projects':
+              document.getElementById('projectsOverview')?.classList.add('highlighted');
+              break;
+        }
+      }
+      else {
+        switch (entry.target.id) {
+            case 'about':
+              document.getElementById('aboutOverview')?.classList.remove('highlighted');
+              break;
+            case 'certificates':
+              document.getElementById('certificatesOverview')?.classList.remove('highlighted');
+              break;
+            case 'techStack':
+              document.getElementById('techStackOverview')?.classList.remove('highlighted');
+              break;
+            case 'projects':
+              document.getElementById('projectsOverview')?.classList.remove('highlighted');
+              break;
+        }
+      }
+    });
+  })
+
+  const secs: any = document.querySelectorAll('.sec');
+  
+  secs.forEach((sec: Element) => {
+    observer.observe(sec);
+  });
+}, [<Projects />])
+
   return (
     <div className='bodyContainer'>
       <NavBarTop /> 

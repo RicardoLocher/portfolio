@@ -4,7 +4,7 @@ import { cs50xText, cs50Web } from './texts';
 
 export function Certificates() {
   return (
-    <div className='certContainer'>
+    <div className='certContainer sec' id='certificates'>
       <span className='certHeading'>Harvard Zertifikate<br/></span>
       <CertAccordion title='cs50x' text={cs50xText}/>
       <CertAccordion title='cs50Web' text={cs50Web}/>

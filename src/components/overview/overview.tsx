@@ -5,10 +5,10 @@ export function Overview() {
   return(
     <div className='overview'>
       <ul className="OverviewList">
-        <li>Über mich</li>
-        <li>Harvard Zertifikate</li>
-        <li>Tech Stack</li>
-        <li>Projekte</li>
+        <li id='aboutOverview' className='normal'>Über mich</li>
+        <li id='certificatesOverview' className='normal'>Harvard Zertifikate</li>
+        <li id='techStackOverview' className='normal'>Tech Stack</li>
+        <li id='projectsOverview' className='normal'>Projekte</li>
       </ul>
     </div>
   )

@@ -3,7 +3,7 @@ import GithubLogo from '../../assets/github.png'
 
 export function Projects() {
     return (
-        <div className='projectsContainer'>
+        <div className='projectsContainer sec' id='projects'>
             <span className='projectsHeading'>Projects</span>
             <Project title='Own-Cloud' 
                      description='Own-Cloud ist eine Cloudsoftware, die vom Nutzer selbst gehostet wird. Die Software ist Open-Source und kann auf jedem Server installiert werden. Sie ist in Python und JavaScript geschrieben und nutzt Django als Backend und eine in React geschriebene Benutzeroberfläche. Bald auch als offizielles Docker-Image verfügbar.' 

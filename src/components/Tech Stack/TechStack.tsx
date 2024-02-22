@@ -4,7 +4,7 @@ import './animations.css'
 export function TechStack() {
     return (
         <>
-            <div className='techStackContainer'>
+            <div className='techStackContainer sec' id='techStack'>
             <span className='techStackHeading'>Tech Stack</span>
                     <span className='techStackHeading1'>Languages</span>
                     <TechStackItem icon='https://img.icons8.com/color/48/000000/typescript.png' title='TypeScript' text='TypeScript ist eine Programmiersprache, die auf JavaScript aufbaut und statische Typisierung sowie zusätzliche Features zur Verbesserung der Code-Qualität und Entwicklerproduktivität bietet.'/>

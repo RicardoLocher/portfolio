@@ -2,7 +2,7 @@ import './about.css'
 
 export function About() {
   return (
-    <div className='aboutContainer'>
+    <div className='aboutContainer sec' id='about'>
       <span className="aboutText"><br/>
         Ich war schon immer an Computern und alles was mit Technik zu tun hat interessiert,
         doch richtig angefangen hat es erst, als ich 2017 über mein erstes Github Repository gestolpert bin.
