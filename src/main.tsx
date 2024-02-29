@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import NavBarTop from './components/navbar/navbar.tsx';
 import { Heading } from './components/heading/heading.tsx';
 import { Overview } from './components/overview/overview.tsx';
 import { About } from './components/about/about.tsx';
@@ -18,6 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 function App() {
   
+  // Intersection Observer with useEffect
+  // This is used to highlight the overview section of the page when the user scrolls to the respective section
+  // Gets executed when the last component is rendered
   useEffect(() => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -65,7 +67,6 @@ function App() {
 
   return (
     <div className='bodyContainer'>
-      <NavBarTop /> 
       <div className='customRow'>
         <div className='hauptInfo'>
           <div className='stickyDiv'>

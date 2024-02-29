@@ -34,3 +34,19 @@
     padding: 5px;
     text-align: center;
 }
+
+.cubeRow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 30px;
+}
+
+.test{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 25px;
+}
