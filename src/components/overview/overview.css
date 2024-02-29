@@ -4,7 +4,7 @@
 }
 
 .OverviewList {
-    list-style-type: square;
+    list-style-type: none;
     text-align: left;
     font-family: monospace;
 }
@@ -17,5 +17,5 @@
 
 .highlighted {
     font-size: 1.5em;
-    color: red;
+    margin-left: 20px;
 }
