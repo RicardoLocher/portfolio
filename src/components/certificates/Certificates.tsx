@@ -4,24 +4,22 @@ import { cs50xText, cs50Web } from './texts';
 
 export function Certificates() {
   return (
-    <div className='certContainer sec' id='certificates'>
-      <span className='certHeading'>Harvard Zertifikate<br/></span>
-      <CertAccordion title='cs50x' text={cs50xText}/>
-      <CertAccordion title='cs50Web' text={cs50Web}/>
-    </div>
-  );
-}
-
-
-function CertAccordion(props: {title: string, text: JSX.Element}) {
-  return (
-    <Accordion style={{margin: '10px'}} data-bs-theme="dark">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>{props.title}</Accordion.Header>
+    <div className='certContainer' id='certificates'>
+      <span className='certHeading sec'>Harvard Zertifikate<br/></span>
+      <Accordion style={{margin: '10px'}} data-bs-theme="dark" defaultActiveKey="0">
+      <Accordion.Item eventKey='0'>
+        <Accordion.Header>cs50x</Accordion.Header>
         <Accordion.Body style={{backgroundColor: '#212121', color: '#fff'}}>
-          <span>{props.text}</span>
+          <span>{cs50xText}</span>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey='1'>
+        <Accordion.Header>cs50 Web</Accordion.Header>
+        <Accordion.Body style={{backgroundColor: '#212121', color: '#fff'}}>
+          <span>{cs50Web}</span>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+    </div>
   );
 }

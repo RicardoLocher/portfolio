@@ -56,7 +56,7 @@ function App() {
         }
       }
     });
-  })
+  });
 
   const secs: any = document.querySelectorAll('.sec');
   
