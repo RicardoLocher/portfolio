@@ -6,6 +6,8 @@ import { About } from './components/about/about.tsx';
 import { Certificates } from './components/certificates/Certificates.tsx';
 import { TechStack } from './components/Tech Stack/TechStack.tsx';
 import { Projects } from './components/Projects/Projects.tsx';
+import { StarBackground } from './components/background/StarBackground.tsx';
+import { CustomStarBackground } from './components/background/StarBackground2.tsx';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -68,6 +70,8 @@ function App() {
 
   return (
     <div className='bodyContainer'>
+      <StarBackground height={740} />
+      <CustomStarBackground height={740} count1={100} count2={100} />
       <div className='customRow'>
         <div className='hauptInfo'>
           <div className='stickyDiv'>
