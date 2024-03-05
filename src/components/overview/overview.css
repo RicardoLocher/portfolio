@@ -19,3 +19,16 @@
     font-size: 1.5em;
     margin-left: 20px;
 }
+
+.inSiteLink{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.inSiteLink:hover{
+    color: #fff;
+    background-color: #272727;
+}
