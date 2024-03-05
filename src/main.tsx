@@ -24,6 +24,7 @@ function App() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        console.log(entry.target.id);
         switch (entry.target.id) {
             case 'about':
               document.getElementById('aboutOverview')?.classList.add('highlighted');

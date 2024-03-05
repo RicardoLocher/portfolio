@@ -4,9 +4,9 @@ import { cs50xText, cs50Web } from './texts';
 
 export function Certificates() {
   return (
-    <div className='certContainer' id='certificates'>
-      <span className='certHeading sec'>Harvard Zertifikate<br/></span>
-      <Accordion style={{margin: '10px'}} data-bs-theme="dark" defaultActiveKey="0">
+    <div className='certContainer'>
+      <span className='certHeading'>Harvard Zertifikate<br/></span>
+      <Accordion style={{margin: '10px'}} data-bs-theme="dark" defaultActiveKey="0" className='sec' id='certificates'>
       <Accordion.Item eventKey='0'>
         <Accordion.Header>cs50x</Accordion.Header>
         <Accordion.Body style={{backgroundColor: '#212121', color: '#fff'}}>
