@@ -51,6 +51,8 @@
     margin: 25px;
 }
 
-.linkIcon{
-    width: 1.5em;
+.linkButton{
+    font-size: 1.1em;
+    font-weight: bolder;
+    background-color: transparent;
 }

@@ -44,7 +44,7 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid #303030;
     border-radius: 1rem;
     color: white;
     box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
@@ -54,7 +54,8 @@
   
   .frontSide,
   .frontSide::before {
-    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+    background: transparent;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   }
   
   .backSide,
