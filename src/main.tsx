@@ -43,32 +43,32 @@ function App() {
           console.log(entry.target.id);
           switch (entry.target.id) {
               case 'about':
-                document.getElementById('aboutOverview')?.classList.add('highlighted');
+                document.getElementById('aboutDash')?.classList.add('dashHighlighted');
                 break;
               case 'certificates':
-                document.getElementById('certificatesOverview')?.classList.add('highlighted');
+                document.getElementById('certDash')?.classList.add('dashHighlighted');
                 break;
               case 'techStack':
-                document.getElementById('techStackOverview')?.classList.add('highlighted');
+                document.getElementById('techStackDash')?.classList.add('dashHighlighted');
                 break;
               case 'projects':
-                document.getElementById('projectsOverview')?.classList.add('highlighted');
+                document.getElementById('projectsDash')?.classList.add('dashHighlighted');
                 break;
           }
         }
         else {
           switch (entry.target.id) {
               case 'about':
-                document.getElementById('aboutOverview')?.classList.remove('highlighted');
+                document.getElementById('aboutDash')?.classList.remove('dashHighlighted');
                 break;
               case 'certificates':
-                document.getElementById('certificatesOverview')?.classList.remove('highlighted');
+                document.getElementById('certDash')?.classList.remove('dashHighlighted');
                 break;
               case 'techStack':
-                document.getElementById('techStackOverview')?.classList.remove('highlighted');
+                document.getElementById('techStackDash')?.classList.remove('dashHighlighted');
                 break;
               case 'projects':
-                document.getElementById('projectsOverview')?.classList.remove('highlighted');
+                document.getElementById('projectsDash')?.classList.remove('dashHighlighted');
                 break;
           }
         }

@@ -13,11 +13,9 @@
     font-size: 1.2em;
     color: #fff;
     transition: 0.5s;
-}
-
-.highlighted {
-    font-size: 1.5em;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .inSiteLink{
@@ -31,4 +29,16 @@
 .inSiteLink:hover{
     color: #fff;
     background-color: #272727;
+    cursor: pointer;
+}
+
+.dash{
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 10px;
+    transition: 0.5s;
+}
+
+.dashHighlighted{
+    width: 35px;
 }
