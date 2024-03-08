@@ -37,50 +37,50 @@ function App() {
   // This is used to highlight the overview section of the page when the user scrolls to the respective section
   // Gets executed when the last component is rendered
   useEffect(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        console.log(entry.target.id);
-        switch (entry.target.id) {
-            case 'about':
-              document.getElementById('aboutOverview')?.classList.add('highlighted');
-              break;
-            case 'certificates':
-              document.getElementById('certificatesOverview')?.classList.add('highlighted');
-              break;
-            case 'techStack':
-              document.getElementById('techStackOverview')?.classList.add('highlighted');
-              break;
-            case 'projects':
-              document.getElementById('projectsOverview')?.classList.add('highlighted');
-              break;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          console.log(entry.target.id);
+          switch (entry.target.id) {
+              case 'about':
+                document.getElementById('aboutOverview')?.classList.add('highlighted');
+                break;
+              case 'certificates':
+                document.getElementById('certificatesOverview')?.classList.add('highlighted');
+                break;
+              case 'techStack':
+                document.getElementById('techStackOverview')?.classList.add('highlighted');
+                break;
+              case 'projects':
+                document.getElementById('projectsOverview')?.classList.add('highlighted');
+                break;
+          }
         }
-      }
-      else {
-        switch (entry.target.id) {
-            case 'about':
-              document.getElementById('aboutOverview')?.classList.remove('highlighted');
-              break;
-            case 'certificates':
-              document.getElementById('certificatesOverview')?.classList.remove('highlighted');
-              break;
-            case 'techStack':
-              document.getElementById('techStackOverview')?.classList.remove('highlighted');
-              break;
-            case 'projects':
-              document.getElementById('projectsOverview')?.classList.remove('highlighted');
-              break;
+        else {
+          switch (entry.target.id) {
+              case 'about':
+                document.getElementById('aboutOverview')?.classList.remove('highlighted');
+                break;
+              case 'certificates':
+                document.getElementById('certificatesOverview')?.classList.remove('highlighted');
+                break;
+              case 'techStack':
+                document.getElementById('techStackOverview')?.classList.remove('highlighted');
+                break;
+              case 'projects':
+                document.getElementById('projectsOverview')?.classList.remove('highlighted');
+                break;
+          }
         }
-      }
+      });
     });
-  });
-
-  const secs: any = document.querySelectorAll('.sec');
   
-  secs.forEach((sec: Element) => {
-    observer.observe(sec);
-  });
-}, [<Projects />])
+    const secs: any = document.querySelectorAll('.sec');
+    
+    secs.forEach((sec: Element) => {
+      observer.observe(sec);
+    });
+  }, [<Projects />])
 
   return (
     <div className='bodyContainer' ref={bodyRef as any} id='bodyContainer'>
