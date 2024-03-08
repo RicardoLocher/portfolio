@@ -6,7 +6,7 @@ export function StarBackground(props: { height: number }) {
       let style = {
         // Calculates the random position
         left: `${Math.random() * 99}vw`,
-        top: `${Math.random() * height}vh`,
+        top: `${(Math.random() * height -20)}px`,
 
         // Sets the animation duration and delay also to a random number
         animationDuration: `${Math.random() * 3 + 2}s`,

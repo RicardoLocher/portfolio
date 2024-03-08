@@ -11,7 +11,7 @@ export function CustomStarBackground(props: { height: number, count1: number, co
         // Calculates the random position
         // Only difference is that the left is 97vw instead of 99vw beacuse the img is bigger
         left: `${Math.random() * 97}vw`,
-        top: `${Math.random() * height}vh`,
+        top: `${Math.random() * height - 20}px`,
 
         // Sets the animation duration and delay also to a random number
         animationDuration: `${Math.random() * 3 + 2}s`,
@@ -25,7 +25,7 @@ export function CustomStarBackground(props: { height: number, count1: number, co
     for (let i = 0; i < props.count2; i++) {
         let style = {
           left: `${Math.random() * 97}vw`,
-          top: `${Math.random() * height}vh`,
+          top: `${Math.random() * height - 20}px`,
           animationDuration: `${Math.random() * 3 + 2}s`,
           animationDelay: `${Math.random() * 5}s`
         };
@@ -34,7 +34,7 @@ export function CustomStarBackground(props: { height: number, count1: number, co
 
     // The stars array is rendered as children of a custom div (to make sure it doesn't overflow)
     return <div style={{
-        height: height.toString() + "vh", 
+        height: height.toString() + "px", 
         maxWidth: "99vw", 
         position: "absolute", 
         top: "0", 

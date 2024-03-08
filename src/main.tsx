@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Heading } from './components/heading/heading.tsx';
 import { Overview } from './components/overview/overview.tsx';
@@ -18,6 +18,20 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 
 function App() {
+  const [height, setHeight] = useState(0);
+  const bodyRef = useRef(document.querySelector('.bodyContainer') as HTMLDivElement);
+
+  // This useEffect is used to get the height of the bodyContainer wich
+  // is used to set the height of the starBackground and customStarBackground
+  // Needs to be executed when the last component is rendered
+  useEffect(() => {
+    window.onload = () => {
+      if (bodyRef.current) {
+        setHeight(bodyRef.current.offsetHeight);
+        console.log(bodyRef.current.offsetHeight);
+      }
+    };
+  }, []);
   
   // Intersection Observer with useEffect
   // This is used to highlight the overview section of the page when the user scrolls to the respective section
@@ -69,9 +83,9 @@ function App() {
 }, [<Projects />])
 
   return (
-    <div className='bodyContainer'>
-      <StarBackground height={740} />
-      <CustomStarBackground height={740} count1={100} count2={100} />
+    <div className='bodyContainer' ref={bodyRef as any} id='bodyContainer'>
+      <StarBackground height={height} />
+      <CustomStarBackground height={height} count1={100} count2={100} />
       <div className='customRow'>
         <div className='hauptInfo'>
           <div className='stickyDiv'>
