@@ -1,5 +1,8 @@
+// React Imports
 import React, { useEffect, useState, useRef } from 'react';
 import ReactDOM from 'react-dom/client';
+
+// Component imports
 import { Heading } from './components/heading/heading.tsx';
 import { Overview } from './components/overview/overview.tsx';
 import { About } from './components/about/about.tsx';
@@ -8,18 +11,26 @@ import { TechStack } from './components/Tech Stack/TechStack.tsx';
 import { Projects } from './components/Projects/Projects.tsx';
 import { StarBackground } from './components/background/StarBackground.tsx';
 import { CustomStarBackground } from './components/background/StarBackground2.tsx';
+
+// Style imports
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+// paralax imports
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <ParallaxProvider>
+      <App />
+    </ParallaxProvider>
   </React.StrictMode>,
 )
 
 function App() {
   const [height, setHeight] = useState(0);
   const bodyRef = useRef(document.querySelector('.bodyContainer') as HTMLDivElement);
+
 
   // This useEffect is used to get the height of the bodyContainer wich
   // is used to set the height of the starBackground and customStarBackground
@@ -95,10 +106,21 @@ function App() {
         </div>
         
         <div className='infoContainer'>
-          <About />
-          <Certificates />
-          <TechStack />
-          <Projects />
+          <Parallax translateY={[-20, 20]} style={{width: '100%', height: '100%', marginBottom: '100px'}} speed={-10}>
+            <About />
+          </Parallax>
+          
+          <Parallax translateY={[-10, 10]} style={{width: '100%', height: '100%', margin: '20px'}} speed={-10}>
+            <Certificates />
+          </Parallax>
+
+          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px'}} speed={-100}>
+            <TechStack />
+          </Parallax>
+
+          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px'}} speed={-10}>
+           <Projects />
+          </Parallax>
         </div>
       </div>
     </div>
