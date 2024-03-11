@@ -63,7 +63,7 @@ export function TechStack() {
                     <span className='techStackHeading1'>Frameworks</span>
                 </Parallax>
 
-                <Parallax  style={{width: '110%', height: '100%', zIndex: 2}} speed={-10} className='parallaxContainer'>
+                <Parallax  style={{width: '110%', height: '100%', paddingTop: '30px'}} speed={-10} className='parallaxContainer'>
                     <TechStackItem icon='https://img.icons8.com/color/48/000000/react-native.png' title='React' link='https://react.dev/'/>
                     <TechStackItem title='React Native' icon='https://img.icons8.com/color/48/000000/react-native.png' link='https://reactnative.dev/'/>
                     <TechStackItem icon='https://img.icons8.com/color/48/000000/nodejs.png' title='Node.js' link='https://nodejs.org/en'/>
