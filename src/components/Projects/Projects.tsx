@@ -18,6 +18,10 @@ export function Projects() {
                      description='Network war ein Projekt, das ich im Rahmen des Harvard Web50-Kurses erstellt habe. Es ist ein soziales Netzwerk, das auf Twitter basiert. Das Ziel war es die Grundfunktionen eines sozialen Netzwerks zu implementieren. Es ist in Python und JavaScript geschrieben und nutzt Django als Backend.'
                      link='https://github.com/RicardoLocher/network-web50' />
 
+            <Project title='Portfolio'
+                     description='Mein Portfolio ist die Website, die Sie gerade betrachten. Sie ist in React geschrieben und nutzt verschiedene Front-End Techniken, wie zum beispiel den Parallax-Effekt und einige aufwändige CSS Animationen. Der komplette Code ist in Typescript geschrieben und Open Source.'
+                     link='https://github.com/RicardoLocher/portfolio' />
+
             <Parallax style={{width: '100%', height: '100%', marginBottom: '40px', marginTop: '40px'}} className='parallaxContainer' speed={-5}>
             <span className='projectsHeading'>Side Projects</span>
             </Parallax>
