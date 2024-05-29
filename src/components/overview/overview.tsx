@@ -12,6 +12,7 @@ export function Overview() {
         <li id='projectsOverview' className='normal'><Dash id='projectsDash' /><a href='#projects' className='inSiteLink'>Projekte</a></li>
       </ul>
       <Socials />
+      <a href='/sortingVisualizer'>Algo Visualizer</a>
     </div>
   )
 }
