@@ -8,7 +8,7 @@ import { Projects } from './components/Projects/Projects.tsx';
 
 export function Home() {
     return (
-        <div className='customRow'>
+    <div className='customRow'>
         <div className='hauptInfo'>
           <div className='stickyDiv'>
             <Heading />
@@ -33,6 +33,6 @@ export function Home() {
            <Projects />
           </Parallax>
         </div>
-      </div>
+    </div>
     )
 }

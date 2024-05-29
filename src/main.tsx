@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom/client';
 import { Projects } from './components/Projects/Projects.tsx';
 import { StarBackground } from './components/background/StarBackground.tsx';
 import { CustomStarBackground } from './components/background/StarBackground2.tsx';
-import SortingVisualizer  from '../algoVisualisation/components/SortingVisualizer.tsx';
+import { SortingPage }  from '../algoVisualisation/components/SortingPage.tsx';
 import { Home } from './Home.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -97,7 +97,7 @@ function App() {
       <CustomStarBackground height={height} count1={100} count2={100} />
       <BrowserRouter>
         <Routes>
-          <Route path='/sortingVisualizer' element={<SortingVisualizer />} />
+          <Route path='/sortingVisualizer' element={<SortingPage />} />
           <Route path='/' element={<Home />} />
         </Routes>
       </BrowserRouter>

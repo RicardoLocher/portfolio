@@ -34,6 +34,7 @@ function SortingVisualizer() {
   return (
     <div>
       <ColumnChart data={data.map((value, index) => ({ name: index + 1, value }))} />
+      
       <select value={selectedAlgorithm} onChange={(e) => setSelectedAlgorithm(e.target.value)}>
         {Object.keys(algorithms).map((algo) => (
           <option key={algo} value={algo}>
