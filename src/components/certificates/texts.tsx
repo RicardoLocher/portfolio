@@ -1,4 +1,5 @@
 import CS50Certificate from '../../assets/CS50x.png';
+import CS50WCertificate from '../../assets/CS50W-Certificate.png';
 
 export const cs50xText : JSX.Element = (
         <>
@@ -30,8 +31,8 @@ export const cs50Web : JSX.Element = (
         <p>Ähnlich wie bei CS50x haben die Teilnehmer die Option, den Kurs kostenlos zu absolvieren oder eine kostenpflichtige Zertifizierung zu erwerben. Durch die Teilnahme an CS50 Web Programming erlangen die Studierenden spezifische Fachkenntnisse in fortgeschrittener Webentwicklung und sind in der Lage, komplexe Webanwendungen zu erstellen und zu verstehen.</p>
         
         <h5>Mein Zertifikat:</h5>
-        <a href='https://certificates.cs50.io/03639b6e-558d-4982-a8e3-93ff631f6ee0.pdf?size=A4' target='_blank' className='certLink'>
-            <img src={CS50Certificate} alt="CS50 certificate" className='certPic'/>
+        <a href='https://certificates.cs50.io/5035a690-fd04-4ac6-8273-0f450527ccb1.pdf?size=A4' target='_blank' className='certLink'>
+            <img src={CS50WCertificate} alt="CS50 certificate" className='certPic'/>
         </a>
     </>
 )
