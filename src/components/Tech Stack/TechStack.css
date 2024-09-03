@@ -35,20 +35,42 @@
     text-align: center;
 }
 
-.cubeRow{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 30px;
+@media screen and (min-width: 510px) {
+    .cubeRow{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 30px;
+    }
+
+    .cubeHolder{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 25px;
+    }
 }
 
-.test{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 25px;
+@media screen and (max-width: 509px) {
+    .cubeRow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .cubeHolder{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 50px;
+    }
 }
 
 .linkButton{

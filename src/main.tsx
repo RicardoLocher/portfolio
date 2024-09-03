@@ -37,7 +37,6 @@ function App() {
     const updateHeight = () => {
       if (bodyRef.current) {
         setHeight(bodyRef.current.offsetHeight);
-        console.log('Height set to:', bodyRef.current.offsetHeight);
       }
     };
 
@@ -60,7 +59,6 @@ function App() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          console.log(entry.target.id);
           switch (entry.target.id) {
               case 'about':
                 document.getElementById('aboutDash')?.classList.add('dashHighlighted');

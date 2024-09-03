@@ -3,10 +3,21 @@
     margin-left: 10%;
 }
 
-.OverviewList {
-    list-style-type: none;
-    text-align: left;
-    font-family: monospace;
+@media screen and (min-width: 1025px) {
+    .OverviewList {
+        list-style-type: none;
+        text-align: left;
+        font-family: monospace;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .OverviewList {
+        display: none;
+        list-style-type: none;
+        text-align: left;
+        font-family: monospace;
+    }
 }
 
 .normal {

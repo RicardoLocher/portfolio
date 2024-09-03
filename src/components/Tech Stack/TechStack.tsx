@@ -28,33 +28,33 @@ export function TechStack() {
 
                 <Parallax translateY={[-10, 10]} style={{width: '100%', height: '100%', marginBottom: '30px', marginTop: '30px', paddingBottom: '20px'}} className='parallaxContainer' speed={-10}>
                     <div className='cubeRow'>
-                        <div className='test'>
+                        <div className='cubeHolder'>
                             <Cube img={Typescript}/>
                         </div>
-                        <div className='test'>
+                        <div className='cubeHolder'>
                             <Cube img={JavaScript}/>
                         </div>
                     </div>
 
                     <div className='cubeRow'>
-                        <div className='test'>
+                        <div className='cubeHolder'>
                             <Cube img={HTML}/>
                         </div>
-                        <div className='test'>
+                        <div className='cubeHolder'>
                             <Cube img={css}/>
                         </div>
                     </div>
 
                     <div className='cubeRow'>
-                        <div className='test'>
+                        <div className='cubeHolder'>
                             <Cube img={python}/>
                         </div>
-                        <div className='test'>
+                        <div className='cubeHolder'>
                             <Cube img={sql}/>
                         </div>
                     </div>
 
-                    <div className='test'>
+                    <div className='cubeHolder'>
                         <Cube img={cLang}/>
                     </div>
                 </Parallax>
