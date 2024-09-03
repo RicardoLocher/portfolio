@@ -18,7 +18,7 @@ export function CustomStarBackground(props: { height: number, count1: number, co
         animationDelay: `${Math.random() * 5}s`
       };
       // Pushes the star into the stars array
-      stars.push(<img className="starCustom" style={style} src={star2} />);
+      stars.push(<img className="starCustom" style={style} src={star2} key={"star" + i}/>);
     }
 
     // Same as above but with a different image
@@ -29,7 +29,7 @@ export function CustomStarBackground(props: { height: number, count1: number, co
           animationDuration: `${Math.random() * 3 + 2}s`,
           animationDelay: `${Math.random() * 5}s`
         };
-        stars.push(<img className="starCustom" style={style} src={star3} />);
+        stars.push(<img className="starCustom" style={style} src={star3} key={"3star" + i}/>);
     }
 
     // The stars array is rendered as children of a custom div (to make sure it doesn't overflow)

@@ -27,18 +27,29 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 function App() {
   const [height, setHeight] = useState(0);
-  const bodyRef = useRef(document.querySelector('.bodyContainer') as HTMLDivElement);
+  const bodyRef = useRef(document.querySelector('#bodyContainer') as HTMLDivElement);
 
 
   // This useEffect is used to get the height of the bodyContainer wich
   // is used to set the height of the starBackground and customStarBackground
   // Needs to be executed when the last component is rendered
   useEffect(() => {
-    window.onload = () => {
+    const updateHeight = () => {
       if (bodyRef.current) {
         setHeight(bodyRef.current.offsetHeight);
-        console.log(bodyRef.current.offsetHeight);
+        console.log('Height set to:', bodyRef.current.offsetHeight);
       }
+    };
+
+    // Call the function initially to set the height
+    updateHeight();
+
+    // Add a resize event listener to update height on window resize
+    window.addEventListener('resize', updateHeight);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', updateHeight);
     };
   }, []);
   
