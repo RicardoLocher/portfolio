@@ -10,13 +10,13 @@ export function Certificates() {
       <Accordion.Item eventKey='0'>
         <Accordion.Header>cs50x</Accordion.Header>
         <Accordion.Body style={{backgroundColor: '#212121', color: '#fff'}}>
-          <span>{cs50xText}</span>
+          <span className='certText'>{cs50xText}</span>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey='1'>
         <Accordion.Header>cs50 Web</Accordion.Header>
         <Accordion.Body style={{backgroundColor: '#212121', color: '#fff'}}>
-          <span>{cs50Web}</span>
+          <span className='certText'>{cs50Web}</span>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

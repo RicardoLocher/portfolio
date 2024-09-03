@@ -49,7 +49,7 @@ function Project(props: {title: string, description: string, link: string}) {
         <Parallax style={{width: '100%', height: '100%', margin: '30px'}} speed={-10} className='parallaxContainer'>
             <div className='project'>
                 <span className='projectTitle'>{props.title}</span>
-                <p>{props.description}</p>
+                <p className='projectDescription'>{props.description}</p>
                 <a href={props.link} target='_blank'>
                 <img src={GithubLogo} alt="github logo" className='githubLogo'/>
                 </a>

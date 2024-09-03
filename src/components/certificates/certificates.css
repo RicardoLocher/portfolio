@@ -37,3 +37,19 @@
 .accItem{
     background-color: transparent;
 }
+
+@media screen and (min-width: 700px) {
+    .certText{
+        font-size: large;
+        text-align: left;
+        font-family: monospace;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .certText{
+        font-size: small;
+        text-align: left;
+        font-family: monospace;
+    }
+}

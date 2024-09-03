@@ -29,7 +29,7 @@ export function Home() {
             <TechStack />
           </Parallax>
 
-          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px', marginTop: '100px'}} speed={-10}>
+          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px', marginTop: '100px',display: 'flex', justifyContent: 'center', alignItems: 'center'}} speed={-10}>
            <Projects />
           </Parallax>
         </div>
