@@ -1,7 +1,9 @@
 .certContainer{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin: 25px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -51,5 +53,17 @@
         font-size: small;
         text-align: left;
         font-family: monospace;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #certificates {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #certificates {
+        width: 80%;
     }
 }

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import ColumnChart from './ColumnChart';
 import * as algorithms from '../algorithms';
 
 function SortingVisualizer() {
-  const [data, setData] = useState([]);
-  const [selectedAlgorithm, setSelectedAlgorithm] = useState('bubbleSort');
+  const [data, setData] = useState<number[]>([]);
+  const [selectedAlgorithm, setSelectedAlgorithm] = useState<keyof typeof algorithms>('bubbleSort'); // Restrict to keys of `algorithms`
 
   useEffect(() => {
     resetArray();
@@ -20,7 +20,10 @@ function SortingVisualizer() {
   };
 
   const sortData = () => {
-    const generator = algorithms[selectedAlgorithm](data);
+    // Using `selectedAlgorithm` as a key of `algorithms`
+    const sortFunction = algorithms[selectedAlgorithm] as (data: number[]) => Generator<number[], void, unknown>;
+
+    const generator = sortFunction(data);
     const sortInterval = setInterval(() => {
       const result = generator.next();
       if (result.done) {
@@ -35,7 +38,7 @@ function SortingVisualizer() {
     <div>
       <ColumnChart data={data.map((value, index) => ({ name: index + 1, value }))} />
       
-      <select value={selectedAlgorithm} onChange={(e) => setSelectedAlgorithm(e.target.value)}>
+      <select value={selectedAlgorithm} onChange={(e) => setSelectedAlgorithm(e.target.value as keyof typeof algorithms)}>
         {Object.keys(algorithms).map((algo) => (
           <option key={algo} value={algo}>
             {algo}

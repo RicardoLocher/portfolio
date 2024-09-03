@@ -21,15 +21,15 @@ export function Home() {
             <About />
           </Parallax>
           
-          <Parallax translateY={[-10, 10]} style={{width: '100%', height: '100%', margin: '20px'}} speed={-10}>
+          <Parallax translateY={[-10, 10]} style={{width: '100%', height: '100%', margin: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center'}} speed={-10}>
             <Certificates />
           </Parallax>
 
-          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px', marginBottom: '200px'}} speed={-100}>
+          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px', marginBottom: '200px' , display: 'flex', justifyContent: 'center', alignItems: 'center'}} speed={-100}>
             <TechStack />
           </Parallax>
 
-          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px', marginTop: '100px',display: 'flex', justifyContent: 'center', alignItems: 'center'}} speed={-10}>
+          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px', marginTop: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center'}} speed={-10}>
            <Projects />
           </Parallax>
         </div>
