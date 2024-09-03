@@ -17,20 +17,11 @@ export function Home() {
         </div>
         
         <div className='infoContainer'>
-          <Parallax translateY={[-20, 20]} style={{width: '100%', height: '100%', marginBottom: '100px'}} speed={-10}>
+          <Parallax style={{width: '100%', height: '100%', marginBottom: '100px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}} speed={-30}>
             <About />
-          </Parallax>
-          
-          <Parallax translateY={[-10, 10]} style={{width: '100%', height: '100%', margin: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center'}} speed={-10}>
             <Certificates />
-          </Parallax>
-
-          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px', marginBottom: '200px' , display: 'flex', justifyContent: 'center', alignItems: 'center'}} speed={-100}>
             <TechStack />
-          </Parallax>
-
-          <Parallax translateY={[-5, 5]} style={{width: '100%', height: '100%', margin: '20px', marginTop: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center'}} speed={-10}>
-           <Projects />
+            <Projects />
           </Parallax>
         </div>
     </div>

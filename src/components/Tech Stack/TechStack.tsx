@@ -11,22 +11,16 @@ import python from '../../assets/python.png'
 import sql from '../../assets/sql.png'
 import cLang from '../../assets/c-lang.png'
 
-import { Parallax } from 'react-scroll-parallax'
 
 export function TechStack() {
     return (
         <>
             <div className='techStackContainer sec' id='techStack'>
             
-            <Parallax style={{width: '100%', height: '100%', marginBottom: '40px', marginTop: '40px'}} className='parallaxContainer' speed={-5}>
                 <span className='techStackHeading'>Tech Stack</span>
-            </Parallax>
-
-            <Parallax style={{width: '100%', height: '100%', marginBottom: '40px', marginTop: '40px'}} className='parallaxContainer' speed={-5}>
+            
                 <span className='techStackHeading1'>Programmiersprachen</span>
-            </Parallax>
 
-                <Parallax translateY={[-10, 10]} style={{width: '100%', height: '100%', marginBottom: '30px', marginTop: '30px', paddingBottom: '20px'}} className='parallaxContainer' speed={-10}>
                     <div className='cubeRow'>
                         <div className='cubeHolder'>
                             <Cube img={Typescript}/>
@@ -57,19 +51,14 @@ export function TechStack() {
                     <div className='cubeHolder'>
                         <Cube img={cLang}/>
                     </div>
-                </Parallax>
 
-                <Parallax style={{width: '100%', height: '100%', marginBottom: '50px', marginTop: '40px', zIndex: 1}} className='parallaxContainer' speed={-5}>
                     <span className='techStackHeading1'>Frameworks</span>
-                </Parallax>
 
-                <Parallax  style={{width: '110%', height: '100%', paddingTop: '30px', paddingBottom: '30px'}} speed={-10} className='parallaxContainer'>
                     <TechStackItem icon='https://img.icons8.com/color/48/000000/react-native.png' title='React' link='https://react.dev/'/>
                     <TechStackItem title='React Native' icon='https://img.icons8.com/color/48/000000/react-native.png' link='https://reactnative.dev/'/>
                     <TechStackItem icon='https://img.icons8.com/color/48/000000/nodejs.png' title='Node.js' link='https://nodejs.org/en'/>
                     <TechStackItem icon='https://img.icons8.com/color/48/000000/django.png' title='Django' link='https://www.djangoproject.com/'/>
                     <TechStackItem icon='https://img.icons8.com/color/48/000000/bootstrap.png' title='Bootstrap' link='https://getbootstrap.com/'/>
-                </Parallax>
                     
             </div>
         </>

@@ -1,5 +1,4 @@
 import './overview.css'
-import { Socials } from './Socials'
 
 export function Overview() {
   
@@ -11,8 +10,6 @@ export function Overview() {
         <li id='techStackOverview' className='normal'><Dash id='techStackDash' /><a href='#techStack' className='inSiteLink'>Tech Stack</a></li>
         <li id='projectsOverview' className='normal'><Dash id='projectsDash' /><a href='#projects' className='inSiteLink'>Projekte</a></li>
       </ul>
-      <Socials />
-      <a href='/sortingVisualizer'>Algo Visualizer</a>
     </div>
   )
 }

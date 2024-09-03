@@ -108,6 +108,9 @@ button:focus-visible {
     align-items: center;
     justify-content: first baseline;
     width: 35vw;
+    margin-top: 150px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     height: fit-content;
     color: #fff;
     font-family: monospace;
@@ -128,8 +131,10 @@ button:focus-visible {
     flex-direction: column;
     align-items: center;
     width: 70vw;
-    justify-content: first baseline;
+    justify-content: center;
     color: #fff;
+    margin-bottom: 100px;
+    margin-top: 100px;
   }
 
   .infoContainer {
@@ -138,6 +143,8 @@ button:focus-visible {
     align-items: center;
     justify-content: first baseline;
     width: 80vw;
+    margin-top: 40%;
+    margin-bottom: 40%;
     height: fit-content;
     color: #fff;
     font-family: monospace;
