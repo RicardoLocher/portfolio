@@ -20,7 +20,6 @@
         padding: 25px;
         font-family: monospace;
         font-size: 1.1em;
-        border: 2px solid #272727;
         border-radius: 15px;
     }
 
@@ -51,7 +50,6 @@
         padding: 25px;
         font-family: monospace;
         font-size: 1.1em;
-        border: 2px solid #272727;
         border-radius: 15px;
     }
 
@@ -69,9 +67,9 @@
 
 
 .project:hover {
-    background-color: #272727;
     color: white;
     transform: translateY(-5px);
+    box-shadow: 7px 11px 20px 5px #000000;
     transition: 0.7s;
 }
 

@@ -7,23 +7,29 @@ import { Parallax } from 'react-scroll-parallax';
 import { Projects } from './components/Projects/Projects.tsx';
 
 export function Home() {
-    return (
-    <div className='customRow'>
-        <div className='hauptInfo'>
-          <div className='stickyDiv'>
+
+  
+
+  return (
+  <div className='customRow'>
+      <div className='hauptInfo'>
+        <div className='stickyDiv'>
+          <div className='centerer'>
             <Heading />
             <Overview />
           </div>
         </div>
-        
-        <div className='infoContainer'>
-          <Parallax style={{width: '100%', height: '100%', marginBottom: '100px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}} speed={-30}>
-            <About />
-            <Certificates />
-            <TechStack />
-            <Projects />
-          </Parallax>
-        </div>
-    </div>
-    )
+      </div>
+      
+      <div className='infoContainer'>
+        <Parallax className='parallaxContainer' speed={-10} >
+          <About />
+          <Certificates />
+          <TechStack />
+          <Projects />
+        </Parallax>
+      </div>
+  </div>
+  )
 }
+
