@@ -4,7 +4,7 @@ export function About() {
   return (
     <div className='aboutContainer'>
       <span className="aboutText sec" id='about'>
-        Ich war schon immer an Computern und alles was mit Technik zu tun hat interessiert,
+        Ich war schon immer an Computern und an allem was mit Technik zu tun hat interessiert,
         doch richtig angefangen hat es erst, als ich 2017 über mein erstes Github Repository gestolpert bin.
         Seitdem habe ich mich immer mehr in die Welt der Softwareentwicklung eingearbeitet und bin heute fest davon überzeugt,
         dass ich in diesem Bereich meine Zukunft sehe. <br/>

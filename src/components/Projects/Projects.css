@@ -21,6 +21,8 @@
         font-family: monospace;
         font-size: 1.1em;
         border-radius: 15px;
+        transition: 0.7s;
+        transform: translateY(0);
     }
 
     .projectDescription {
@@ -51,6 +53,8 @@
         font-family: monospace;
         font-size: 1.1em;
         border-radius: 15px;
+        transition: 0.7s;
+        transform: translateY(0);
     }
 
     .projectDescription {
@@ -70,7 +74,7 @@
     color: white;
     transform: translateY(-5px);
     box-shadow: 7px 11px 20px 5px #000000;
-    transition: 0.7s;
+    
 }
 
 .projectTitle {

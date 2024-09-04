@@ -10,6 +10,7 @@ import css from '../../assets/css.png'
 import python from '../../assets/python.png'
 import sql from '../../assets/sql.png'
 import cLang from '../../assets/c-lang.png'
+import cpp from '../../assets/cpp.png'
 
 
 export function TechStack() {
@@ -20,6 +21,15 @@ export function TechStack() {
                 <span className='techStackHeading'>Tech Stack</span>
             
                 <span className='techStackHeading1'>Programmiersprachen</span>
+
+                    <div className='cubeRow'>
+                        <div className='cubeHolder'>
+                            <Cube img={cLang}/>
+                        </div>
+                        <div className='cubeHolder'>
+                            <Cube img={cpp} />
+                        </div>
+                    </div>
 
                     <div className='cubeRow'>
                         <div className='cubeHolder'>
@@ -46,10 +56,6 @@ export function TechStack() {
                         <div className='cubeHolder'>
                             <Cube img={sql}/>
                         </div>
-                    </div>
-
-                    <div className='cubeHolder'>
-                        <Cube img={cLang}/>
                     </div>
 
                     <span className='techStackHeading1'>Frameworks</span>

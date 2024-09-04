@@ -4,7 +4,7 @@ import { cs50xText, cs50Web } from './texts';
 
 export function Certificates() {
   return (
-    <div className='certContainer'>
+    <div className='certContainer' id='certificateSection'>
       <span className='certHeading'>Harvard Zertifikate<br/></span>
       <Accordion style={{margin: '10px', marginBottom: '200px'}} data-bs-theme="dark" defaultActiveKey="0" className='sec' id='certificates'>
       <Accordion.Item eventKey='0'>
