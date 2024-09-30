@@ -18,7 +18,7 @@
         width: 70%;
         margin: 25px;
         padding: 25px;
-        font-family: monospace;
+        font-family: sans-serif;
         font-size: 1.1em;
         border-radius: 15px;
         transition: 0.7s;
@@ -39,7 +39,7 @@
         align-items: center;
         width: 100%;
         margin: 10%;
-        font-family: monospace;
+        font-family: sans-serif;
     }
 
     .project{
@@ -50,7 +50,7 @@
         width: 100%;
         margin: 25px;
         padding: 25px;
-        font-family: monospace;
+        font-family: sans-serif;
         font-size: 1.1em;
         border-radius: 15px;
         transition: 0.7s;

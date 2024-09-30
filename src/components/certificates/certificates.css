@@ -8,7 +8,7 @@
     margin-top: 100px;
     margin-bottom: 100px;
     margin: 10%;
-    font-family: monospace;
+    font-family: sans-serif;
 }
 
 .certHeading{
@@ -44,7 +44,7 @@
     .certText{
         font-size: large;
         text-align: left;
-        font-family: monospace;
+        font-family: sans-serif;
     }
 }
 
@@ -52,7 +52,7 @@
     .certText{
         font-size: small;
         text-align: left;
-        font-family: monospace;
+        font-family: sans-serif;
     }
 }
 

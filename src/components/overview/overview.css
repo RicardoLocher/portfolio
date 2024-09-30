@@ -7,7 +7,7 @@
     .OverviewList {
         list-style-type: none;
         text-align: left;
-        font-family: monospace;
+        font-family: sans-serif;
     }
 }
 
@@ -40,7 +40,6 @@
 }
 .inSiteLink:hover{
     color: #fff;
-    border: 1px solid #272727;
     cursor: pointer;
     transform: translateY(-3px);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);

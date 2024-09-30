@@ -1,9 +1,9 @@
 .socialsContainer{
     display: flex;
-    justify-content: center;
+    justify-content: first baseline;
     align-items: center;
     width: fit-content;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -32,6 +32,11 @@
 
 #Instagram:hover{
     background-color: #e4405f;
+    transition-duration: .3s;
+}
+
+#LinkedIn:hover{
+    background-color: #8BB7F1;
     transition-duration: .3s;
 }
 

@@ -75,7 +75,6 @@ function TechStackItem(props: {icon: string, title: string, link: string}) {
 
     const linkStyle = {
         fontSize: '1.1rem',
-        fontWeight: 'bolder',
     }
 
     return (
